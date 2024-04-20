@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Permanant Marker",cursive;
+    user-select:none;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+.gameBoard{
+    display:flex;
+    width:300px;
+    height:300px;
+    flex-wrap: wrap;
+    box-shadow:0 0 0 1px;
+    cursor:pointer;
+}
+.box{
+    height:100px;
+    width:100px;
+    border:1px solid black;
+    font-size:70px;
+    text-align:center;
+}
+#restart{
+    width:100px;
+    padding:8px;
+    font-size:18px;
+}
+#winner{
+    font-size:25px;
+}
+#restart:active{
+    transform:translate(1px,1px);
+}
+.win{
+    background-color: lightgreen;
+}
