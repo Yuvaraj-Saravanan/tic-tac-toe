@@ -62,6 +62,6 @@ function checkAndColor(){
         for(let j=0; j<winEl.length;j++){
                 boxEl[winEl[j]].classList.add('win')
         }
-        if(boxIndex.every(el=>el!='')) winner.textContent='Match draw, Please Restart'
+        if(boxIndex.every(el=>el!='')&& isGameOn==true) winner.textContent='Match draw, Please Restart'
     })
 }
